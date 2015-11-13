@@ -1,4 +1,7 @@
-﻿//=============EYE BREAK======================
+﻿//Start app
+//Start timers
+
+//=============EYE BREAK======================
 //------------Pseuodocode---------------------
 //start counter for eye break
 //after x seconds
@@ -18,9 +21,7 @@
 //app detects some walking movement through accelerometer from user
 //reset timer and start againr
 
-//=============================================
-//TESTING Changes
-//=============================================
+
 
 using System;
 using System.Timers;
@@ -41,7 +42,8 @@ namespace GoFar_CS496
 
 		protected override void OnCreate (Bundle bundle)
 		{
-			
+
+			//TODO:Update based on Michael research, units are in milliseconds
 			int eyeIntervalTime = 1000;
 			int moveIntervalTime = 2000;
 
@@ -104,23 +106,41 @@ namespace GoFar_CS496
 		}
 
 
-		   
+		   //
 
 
 		//eye break popup method
 		private static void eyeBreak(ElapsedEventArgs e)
 		{
 			//TODO
+			//Pop up reminder for eye break along with vibrate/tone
+			//okay button
+
 		}
 
 		//movement break popup method
 		private static void movementBreak(ElapsedEventArgs e)
 		{
+			SensorManager mSensorManager;
+			Sensor mSensor;
+
 			//TODO
+
+			//create reminder popup (call method)
+			//option to cancel/skip
+
+			//automatic reset when walking movement detected
+			mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+			mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
+
+
+
 		}
 
 
+		//TODO: Popup method for movement reminder
 
+		//TODO: Popup method for eyebreak reminder
 
 
 

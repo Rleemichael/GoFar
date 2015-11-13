@@ -1234,6 +1234,9 @@ namespace GoFar_CS496
 			// aapt resource value: 0x7f0b003e
 			public const int expanded_menu = 2131427390;
 			
+			// aapt resource value: 0x7f0b004e
+			public const int eyePopup = 2131427406;
+			
 			// aapt resource value: 0x7f0b002a
 			public const int grayscale = 2131427370;
 			
@@ -1270,20 +1273,20 @@ namespace GoFar_CS496
 			// aapt resource value: 0x7f0b0024
 			public const int match_parent = 2131427364;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int media_route_control_frame = 2131427410;
-			
 			// aapt resource value: 0x7f0b0053
-			public const int media_route_disconnect_button = 2131427411;
+			public const int media_route_control_frame = 2131427411;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int media_route_list = 2131427407;
+			// aapt resource value: 0x7f0b0054
+			public const int media_route_disconnect_button = 2131427412;
 			
 			// aapt resource value: 0x7f0b0050
-			public const int media_route_volume_layout = 2131427408;
+			public const int media_route_list = 2131427408;
 			
 			// aapt resource value: 0x7f0b0051
-			public const int media_route_volume_slider = 2131427409;
+			public const int media_route_volume_layout = 2131427409;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int media_route_volume_slider = 2131427410;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int middle = 2131427352;
@@ -1291,8 +1294,8 @@ namespace GoFar_CS496
 			// aapt resource value: 0x7f0b002b
 			public const int monochrome = 2131427371;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int myButton = 2131427406;
+			// aapt resource value: 0x7f0b004f
+			public const int myButton = 2131427407;
 			
 			// aapt resource value: 0x7f0b0012
 			public const int never = 2131427346;
@@ -1504,19 +1507,25 @@ namespace GoFar_CS496
 			public const int abc_simple_decor = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int Main = 2130903064;
+			public const int eyeBreakPopup = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int mr_media_route_chooser_dialog = 2130903065;
+			public const int Main = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int mr_media_route_controller_dialog = 2130903066;
+			public const int moveBreakPopup = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int mr_media_route_list_item = 2130903067;
+			public const int mr_media_route_chooser_dialog = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int support_simple_spinner_dropdown_item = 2130903068;
+			public const int mr_media_route_controller_dialog = 2130903068;
+			
+			// aapt resource value: 0x7f03001d
+			public const int mr_media_route_list_item = 2130903069;
+			
+			// aapt resource value: 0x7f03001e
+			public const int support_simple_spinner_dropdown_item = 2130903070;
 			
 			static Layout()
 			{
