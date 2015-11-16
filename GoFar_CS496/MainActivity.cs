@@ -21,7 +21,13 @@
 //app detects some walking movement through accelerometer from user
 //reset timer and start againr
 
-
+/*
+EXERCISES - Pseudocode:
+Method triggered by Movement/Eye break method
+Uses a switch statement that uses SetContentView to each exercise
+Exercise is chosen using RNG 
+Make sure each exercise has a return/complete button to return to main page
+*/
 
 using System;
 using System.Timers;
@@ -48,10 +54,27 @@ namespace GoFar_CS496
 			int moveIntervalTime = 2000;
 
 			base.OnCreate (bundle);
-
-			// Set our view from the "main" layout resource
+			/*
+			Navigation:
+			Check if first time
+			First time = Eula -> setup -> Main screen
+			After first = Main screen
+			
+			Consider adding a menu page that will allow changes to initial set up
+			*/
+			// Set our view from the "main" layout resource or EULA for initial setup
+			bool firstTime = true; // Placeholder value
 			SetContentView (Resource.Layout.Main);
-
+			if (firstTime == true) // Placeholder: value must be saved to show skip setup
+				SetContentView (Resource.Layout.EULA);
+			else
+				SetContentView (Resource.Layout.HomeScreen);
+			// Button to accept EULA
+			Button agreeButton = FindViewById<Button> (Resource.Id.agreeButton);
+			// Define click
+			agreeButton.Click += (object IntentSender, EventArgs e) => {SetContentView (Resource.Layout.SetupComplete);};
+			
+			/* SUGGESTION: Remove this block of code if unnecessary
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
@@ -59,7 +82,7 @@ namespace GoFar_CS496
 			button.Click += delegate {
 				button.Text = string.Format ("{0} clicks!", count++);
 			};
-
+			*/
 
 			//TODO: Call timer method for eye break and pass time parameter (eyeIntervalTime)
 
